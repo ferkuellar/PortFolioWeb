@@ -120,7 +120,7 @@ function slider() {
     var gTime = d3.select('div#slider-time') // Div donde se inserta
         .append('svg')
         .attr('width', 800)
-        .attr('height', 200)
+        .attr('height', 100)
         .append('g')
         .attr('transform', 'translate(30,30)');
 
