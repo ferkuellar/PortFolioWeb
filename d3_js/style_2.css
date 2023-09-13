@@ -1,0 +1,51 @@
+/* Estilo general del SVG */
+svg {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+}
+
+/* Estilo para los grupos de elementos y ejes */
+.elementGroup,
+.axisGroup {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para las barras del gráfico */
+.bar {
+    fill: #4CAF50;  /* Color de relleno */
+    stroke: #333;  /* Color del borde */
+    stroke-width: 1;  /* Ancho del borde */
+}
+
+/* Estilo para las barras al pasar el mouse */
+.bar:hover {
+    fill: #45a049;  /* Color de relleno al pasar el mouse */
+}
+
+/* Estilo para los ejes */
+.xAxisGroup path,
+.yAxisGroup path,
+.xAxisGroup line,
+.yAxisGroup line {
+    stroke: black;  /* Color de los ejes */
+}
+
+/* Estilo para las etiquetas de los ejes */
+.xAxisGroup text,
+.yAxisGroup text {
+    font-size: 12px;  /* Tamaño de fuente */
+    fill: #333;  /* Color de texto */
+}
+
+/* Estilo para la línea del gráfico */
+#linea {
+    stroke: #ff4500;  /* Color de la línea */
+    stroke-width: 2;  /* Ancho de la línea */
+    fill: none;  /* Sin relleno */
+}
+
+/* Estilo para la línea de umbral */
+line {
+    stroke-dasharray: 4;  /* Patrón de línea discontinua */
+}
+
