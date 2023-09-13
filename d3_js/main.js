@@ -24,6 +24,7 @@ function update(data) {
     // 3. función que actualiza el gráfico
     const chartDiv = d3.select("#chart_p1");
     chartDiv.selectAll("*").remove(); // Eliminar el gráfico anterior
+    const uniqueTickValues = Array.from(new Set(data.map(d => data.filter(val => val === d).length)));
 
     // Definir dimensiones y márgenes del gráfico
     const margin = { 
@@ -52,12 +53,14 @@ function update(data) {
 
     const y = d3
         .scaleLinear()
-        .domain([0, d3.max(data, d => data.filter(val => val === d).length)])
+        .domain([0, Math.round(d3.max(data, d => data.filter(val => val === d).length))])
         .range([height, 0]);
 
     // Crear ejes x e y
     const xAxis = d3.axisBottom(x);
-    const yAxis = d3.axisLeft(y);
+    const yAxis = d3.axisLeft(y)
+        .tickFormat(d3.format(".0f"))
+        .tickValues(uniqueTickValues);
 
     // Agregar ejes al lienzo SVG
     svg.append("g")
