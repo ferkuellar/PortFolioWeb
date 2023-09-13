@@ -1,0 +1,435 @@
+/* Paleta de colores */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #f0f0f0;
+    --footer-color: #2e4d70;
+    --text-color: #333;
+    --border-color: #ccc;
+}
+
+/* Estilos generales */
+body {
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* contendor */
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Encabezado de navegación */
+#navbar {
+    background-color: #333;
+    color: white;
+    overflow: hidden;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Nuevos estilos para la sección About Me */
+
+
+.about-me-wrapper {
+    position: relative; /* Agrega posición relativa para poder posicionar el pseudo-elemento */
+    display: flex;
+    align-items: center;
+    background-image: url('./img/background.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+.about-me-wrapper {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos hijos */
+    justify-content: space-between;
+}
+
+.about-me-content {
+    flex: 1;
+    padding: 100px;
+    color: white;
+}
+
+.about-me-text {
+    max-width: 600px;
+    text-align: justify;
+}
+
+.about-me-img {
+    background-image: url('./img/img_1.png'); /* Ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    height: 100%;
+    min-height: 400px; /* Ajustar según necesidad */
+    margin-right: 50px;
+}
+
+/* Estilos para el enlace de descarga */
+
+.download-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);  /* Fondo claro, para que encaje con el esquema de color general */
+    color: var(--primary-color);  /* Texto en el color primario para que contraste */
+    text-decoration: none;
+    border: 1px solid var(--primary-color);  /* Borde en el color primario */
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-right: 10px; /* Espacio entre los botones */
+}
+
+.download-link:last-child {
+    margin-right: 0; /* Elimina el espacio a la derecha del último botón */
+}
+
+.download-link:hover {
+    background-color: var(--primary-color);  /* Cambia el fondo al color primario al pasar el ratón */
+    color: var(--secondary-color);  /* Cambia el texto al color secundario al pasar el ratón */
+}
+
+/* ... Estilos existentes ... */
+
+.download-buttons-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    font-size: 24px; /* Ajustar según tu preferencia */
+    color: #fff; /* Ajustar según tu preferencia */
+}
+
+
+
+/* Tarjetas */
+
+.about_me_class {
+background-color: #f5f5f5;
+padding: 50px 0;
+}
+
+.header-content {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.text-and-image {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+margin-top: 30px;
+}
+
+.text-container {
+max-width: 600px;
+}
+
+.text-container h1 {
+font-size: 2.5rem;
+margin-bottom: 15px;
+}
+
+.text-container p {
+font-size: 1.1rem;
+margin-bottom: 15px;
+line-height: 1.6;
+}
+
+/* ----------Imagen ---------------------- */
+
+img.professional-photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Agrega margen superior e inferior para centrar la imagen */
+}
+
+img.professional-photo:hover {
+    transform: scale(1.45); /* Agranda la imagen al pasar el mouse por encima */
+    transition: transform 0.3s ease;
+}
+
+/* ------------Card ------------------ */
+
+.card {
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6;
+}
+
+.card h1 {
+    margin-top: 0;
+}
+
+.card-grid span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-grid span {
+    font-size: 5rem; /* Ajustar el tamaño segú preferencias */
+}
+
+/* Imagen en el encabezado */
+.header-content img {
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenido de encabezado */
+.text-and-image {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.text-container {
+    margin-right: 20px;
+    flex: 1;
+}
+
+/* Cuadrícula de tarjetas */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.card .icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.card h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Sección de portafolio */
+#portfolio {
+    background-color: #f0f0f0;
+    padding: 40px;
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; /* Cambio en el alineamiento vertical */
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Cambio en la dirección de flex */
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px; /* Establece una altura fija para las imágenes */
+    object-fit: cover; /* Asegura que las imágenes se ajusten correctamente */
+    border-radius: 5px;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: auto; /* Mueve el enlace hacia abajo */
+    padding: 8px 16px;
+    background-color: #2c3e50;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: #34495e;
+}
+
+/* ----------------- Gráfica de barras ----- */
+#technologies h2 {
+    text-align: center;
+}
+
+.bar-chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+
+.bar-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+}
+
+.bar {
+    height: 30px;
+    margin: 5px 0;
+    background-color: var(--primary-color);
+    color: #f0f0f0;
+    line-height: 30px;
+    padding-left: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Formulario de contacto */
+.contact-section {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-contact {
+    width: 340px;
+    background: rgba(230, 230, 230, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-contact h2 {
+    margin: 0 0 20px 0;
+    color: #78788c;
+    border-bottom: 3px solid #78788c;
+}
+
+.form-contact input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.form-contact input:focus {
+    border-color: #78788c;
+}
+
+.form-contact button {
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #78788c;
+    background: #78788c;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-contact button:hover {
+    background-color: #606072;
+}
+
+.form-contact div {
+    position: relative;
+    margin-top: 20px;
+    background: #50505a;
+    color: #fff;
+    padding: 16px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+
+/* Pie de página */
+.footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;  /* Centra los elementos horizontalmente */
+    align-items: center;  /* Centra los elementos verticalmente */
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.footer-city {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 0;
+}
