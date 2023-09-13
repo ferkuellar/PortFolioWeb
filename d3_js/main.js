@@ -33,8 +33,8 @@ function update(data) {
         bottom: 70, 
         left: 60 
     };
-    const width = 800 - margin.left - margin.right;
-    const height = 600 - margin.top - margin.bottom;
+    const width = 900 - margin.left - margin.right;
+    const height = 400 - margin.top - margin.bottom;
 
     // Crear el lienzo SVG
     const svg = chartDiv
@@ -103,7 +103,7 @@ function slider() {
         .min(d3.min(years)) // Rango mínimo de años
         .max(d3.max(years)) // Rango máximo de años
         .step(4) // Incremento del control (4 años por cada cambio)
-        .width(580) // Ancho del control en píxeles
+        .width(800) // Ancho del control en píxeles
         .ticks(years.length)
         .default(years[years.length - 1]) // Valor inicial del marcador
         .on('onchange', val => {
@@ -122,7 +122,7 @@ function slider() {
     // Contenedor del control deslizante
     var gTime = d3.select('div#slider-time') // Div donde se inserta
         .append('svg')
-        .attr('width', 800)
+        .attr('width', 900)
         .attr('height', 100)
         .append('g')
         .attr('transform', 'translate(30,30)');

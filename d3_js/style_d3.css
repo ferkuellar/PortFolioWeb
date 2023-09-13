@@ -1,0 +1,122 @@
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;  /* Centra el contenido */
+}
+
+/* Cabecera */
+h1, h2, h3, h4 {
+    margin-top: 0;
+    color: #2C3E50;  /* Color oscuro para los títulos */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Sección de Proyectos */
+#database-projects {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #333;
+}
+
+/* Detalles del Proyecto */
+.project {
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Gráficos y Sliders */
+#chart_p1, #chart_p2, #chart_p3 {
+    display: inline-block;  /* Hace que el SVG se comporte como un elemento en línea */
+    margin: 0 auto;  /* Centra el SVG */
+    height: 400px;
+    border: 1px solid #ccc;
+}
+
+/* Tecnologías Utilizadas */
+p:last-child {
+    font-style: italic;
+    color: #777;
+}
+
+/* Estilos para los gráficos SVG */
+svg {
+    background-color: #ECF0F1;  /* Color de fondo claro */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los ejes */
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #7F8C8D;  /* Color de trazo gris */
+    stroke-width: 1px;
+}
+
+.axis text {
+    font-size: 12px;
+    fill: #333;
+}
+
+/* Estilos para las barras del gráfico */
+.bar {
+    fill: #2980B9;  /* Color de relleno azul */
+}
+
+.bar:hover {
+    fill: #3498DB;  /* Color de relleno azul claro al pasar el ratón */
+}
+
+/* Estilos para la línea del gráfico */
+#linea {
+    stroke: #C0392B;  /* Color de trazo rojo */
+    stroke-width: 2px;
+}
+
+/* Estilos para el tooltip */
+.tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Estilos para el slider */
+#slider-time {
+    margin: 20px auto;  /* Centra el slider */
+    width: 90%;  /* Ancho del slider */
+}
+

@@ -1,0 +1,47 @@
+/* Estilos para el contenedor de la gráfica */
+#chart {
+    margin: 20px auto;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el texto de las etiquetas de ejes */
+text {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+/* Estilos para la línea del gráfico */
+.line {
+    fill: none;
+    stroke: #007bff;
+    stroke-width: 2;
+}
+
+/* Estilos para los ejes */
+.axis path,
+.axis line {
+    fill: none;
+    shape-rendering: crispEdges;
+}
+
+/* Estilos para las etiquetas de los ejes */
+.axis text {
+    font-size: 11px;
+}
+
+/* Estilos para las etiquetas de título de ejes */
+.axis-label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Estilos para el título del gráfico */
+.chart-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
