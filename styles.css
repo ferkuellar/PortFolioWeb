@@ -451,7 +451,6 @@ img {
 @media only screen and (max-width: 800px) {
     .about-me-img {
         min-height: 300px;
-        margin: auto;
     }
 }
 
@@ -481,7 +480,7 @@ img {
     .about-me-img {
         width: 100%;
         min-height: 300px;
-
+        margin: auto;
     }
 
     /* Estilos para las tarjetas en la sección de habilidades */
