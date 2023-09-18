@@ -433,3 +433,36 @@ img.professional-photo:hover {
     font-size: 14px;
     margin-bottom: 0;
 }
+
+/* ... Tus estilos actuales ... */
+
+/* Media query para pantallas menores a 768px (típicamente dispositivos móviles) */
+@media screen and (max-width: 768px) {
+
+    /* Hace que la imagen se ajuste al ancho del contenedor y elimina los márgenes */
+    img.professional-photo {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Ajustes para el contenedor de proyectos */
+    .project-card img {
+        height: auto;  /* Permite que la altura sea automática para mantener la proporción */
+    }
+
+    /* Ajusta el tamaño del contenedor en dispositivos móviles */
+    .contenedor {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Ajustes para otros elementos para mejor visualización en móvil */
+    .about-me-content, .text-container {
+        padding: 20px;
+    }
+
+    /* Ajustes para la cuadrícula de tarjetas */
+    .card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
