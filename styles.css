@@ -434,35 +434,65 @@ img.professional-photo:hover {
     margin-bottom: 0;
 }
 
-/* ... Tus estilos actuales ... */
+/* Media queries para diseño responsivo */
 
-/* Media query para pantallas menores a 768px (típicamente dispositivos móviles) */
-@media screen and (max-width: 768px) {
-
-    /* Hace que la imagen se ajuste al ancho del contenedor y elimina los márgenes */
-    img.professional-photo {
-        width: 100%;
-        margin: 0 auto;
+@media only screen and (max-width: 768px) {
+    /* Estilos para la navegación */
+    #navbar a {
+        padding: 12px 15px;
+        font-size: 16px;
+    }
+  
+    /* Estilos para la sección 'About Me' */
+    .about-me-wrapper {
+        flex-direction: column;
     }
 
-    /* Ajustes para el contenedor de proyectos */
-    .project-card img {
-        height: auto;  /* Permite que la altura sea automática para mantener la proporción */
-    }
-
-    /* Ajusta el tamaño del contenedor en dispositivos móviles */
-    .contenedor {
-        width: 100%;
-        padding: 10px;
-    }
-
-    /* Ajustes para otros elementos para mejor visualización en móvil */
-    .about-me-content, .text-container {
+    .about-me-content {
         padding: 20px;
     }
 
-    /* Ajustes para la cuadrícula de tarjetas */
+    .about-me-img {
+        width: 100%;
+        min-height: 200px;
+    }
+  
+    /* Estilos para las tarjetas en la sección de habilidades */
     .card-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        margin: 10px;
+    }
+
+    /* Estilos para el portafolio de proyectos */
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .project-card {
+        width: 90%;
+    }
+
+    /* Estilos para la sección de tecnologías */
+    .bar-chart {
+        width: 100%;
+    }
+
+    /* Estilos para el formulario de contacto */
+    .form-contact {
+        width: 100%;
+    }
+
+    /* Estilos para el pie de página */
+    .social-links {
+        flex-direction: column;
+    }
+
+    .social-icon {
+        margin: 5px 0;
     }
 }
+
