@@ -1,0 +1,89 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+}
+
+/* Estilos para la cabecera */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las secciones */
+section {
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los proyectos */
+.project {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.project a {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* ... Tus estilos anteriores ... */
+
+/* Centrar y estilizar las imágenes */
+.project img {
+    display: block;
+    margin: 20px auto; /* Centra la imagen */
+    max-width: 80%; /* Reduce el tamaño máximo para una mejor visualización */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra para un efecto elevado */
+    border-radius: 10px; /* Bordes redondeados para un look más suave */
+    transition: transform .2s ease-in-out; /* Transición para el efecto hover */
+}
+
+/* Efecto hover para hacer la imagen un poco más grande al pasar el mouse */
+.project img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para el botón de regresar */
+.back-button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.back-button:hover {
+    background-color: #2980b9;
+}
