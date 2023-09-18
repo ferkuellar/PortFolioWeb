@@ -436,6 +436,31 @@ img.professional-photo:hover {
 
 /* Media queries para diseño responsivo */
 
+/* Hacer que las imágenes sean responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Centrar las imágenes */
+.project-card img {
+    display: block;
+    margin: auto;
+}
+
+@media only screen and (max-width: 800px) {
+    .about-me-img {
+        min-height: 300px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .about-me-img {
+        min-height: 200px;
+    }
+}
+
+
 @media only screen and (max-width: 768px) {
     /* Estilos para la navegación */
     #navbar a {
