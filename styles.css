@@ -442,7 +442,7 @@ img.professional-photo:hover {
         padding: 12px 15px;
         font-size: 16px;
     }
-  
+
     /* Estilos para la sección 'About Me' */
     .about-me-wrapper {
         flex-direction: column;
@@ -456,7 +456,7 @@ img.professional-photo:hover {
         width: 100%;
         min-height: 200px;
     }
-  
+
     /* Estilos para las tarjetas en la sección de habilidades */
     .card-grid {
         grid-template-columns: 1fr;
@@ -471,7 +471,7 @@ img.professional-photo:hover {
         flex-direction: column;
         align-items: center;
     }
-  
+
     .project-card {
         width: 90%;
     }
